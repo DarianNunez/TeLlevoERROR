@@ -1,0 +1,79 @@
+
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu Content</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+
+    <ion-item>
+      <ion-button [routerLink]="['/viaje']">Iniciar viaje</ion-button>
+    </ion-item>
+
+    <ion-item>
+    <ion-button [routerLink]="['/history']">Historial</ion-button>  
+    </ion-item>
+
+    <ion-item>
+    <ion-button (click)="desconectar()">Salir</ion-button> 
+    </ion-item>
+    
+  </ion-content>
+</ion-menu>
+
+
+<ion-content [fullscreen]="true">
+
+  <ion-item>
+    <ion-input placeholder="Dirección">
+
+    </ion-input>    
+  </ion-item>
+
+  <ion-item>
+    <ion-input placeholder="Cantidad de pasajeros">
+
+    </ion-input>    
+  </ion-item>
+
+  <ion-item>
+    <ion-input placeholder="Cobro">
+
+    </ion-input>    
+  </ion-item>
+    <ion-item>
+    <ion-select aria-label="Comuna" interface="popover" placeholder="Comuna salida">
+      <ion-select-option value="SedeAlameda"  id="commune" name="commune">Alameda</ion-select-option>
+      <ion-select-option value="PadreAlonsoOvalle"  id="commune" name="commune">Padre Alonso de Ovalle</ion-select-option>
+      <ion-select-option value="AntonioVaras"  id="commune" name="commune">Antonio Varas</ion-select-option>
+      <ion-select-option value="EducaciónContinua"  id="commune" name="commune">Educación Continua</ion-select-option>
+      <ion-select-option value="Maipu"  id="commune" name="commune">Maipú</ion-select-option>
+      <ion-select-option value="Melipilla"  id="commune" name="commune">Melipilla</ion-select-option>
+      <ion-select-option value="PlazaNorte"  id="commune" name="commune">Plaza Norte</ion-select-option>
+      <ion-select-option value="PlazaOeste"  id="commune" name="commune">Plaza Oeste</ion-select-option>
+      <ion-select-option value="PlazaVespucio"  id="commune" name="commune">Plaza Vespucio</ion-select-option>
+      <ion-select-option value="PuenteAlto"  id="commune" name="commune">Puente Alto</ion-select-option>
+      <ion-select-option value="SanBernardo"  id="commune" name="commune">San Bernardo</ion-select-option>
+      <ion-select-option value="SanCarlosApoquindo"  id="commune" name="commune">San Carlos de Apoquindo</ion-select-option>
+      <ion-select-option value="SanJoaquin"  id="commune" name="commune">San Joaquín</ion-select-option>
+      <ion-select-option value="Valparaiso"  id="commune" name="commune">Valparaíso</ion-select-option>
+      <ion-select-option value="Vina"  id="commune" name="commune">Viña del Mar</ion-select-option>
+      <ion-select-option value="Arauco"  id="commune" name="commune">Arauco</ion-select-option>
+      <ion-select-option value="Nacimiento"  id="commune" name="commune">Nacimiento</ion-select-option>
+      <ion-select-option value="SanAndresConcepción" id="commune" name="commune">San Andrés de Concepción</ion-select-option>
+      <ion-select-option value="Villarrica" id="commune" name="commune">Villarrica</ion-select-option>
+      <ion-select-option value="PuertoMontt" id="commune" name="commune">Puerto Montt</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+
+  <ion-fab horizontal="end" style="margin: 30px;">
+    <br>
+
+      <ion-fab-button [routerLink]="(['/home'])">
+        <ion-icon name="chevron-forward"></ion-icon>
+      </ion-fab-button>
+
+  </ion-fab>
+</ion-content>

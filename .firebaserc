@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "tellevoapp-1e6b1": {
+      "hosting": {
+        "app": [
+          "tellevoapp-1e6b1"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "tellevoapp-1e6b1"
+  }
+}
